@@ -1,0 +1,97 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<article class="banner">
+  <div class="Icons">
+    <!-- <Icon name="" /> -->
+    <p>Monday - Friday 8AM - 9PM</p>
+  </div>  
+
+  <div class="Icons">
+    <!-- <Icon name="" /> -->
+    <p>725 Park Ave, New York</p>
+  </div>
+
+  <div class="some">
+    <Icon name="instagram" />
+    <Icon name="twitter" />
+    <Icon name="linked-in" />
+  </div>
+</article>
+
+<article class="menu">
+    <div>
+      <!-- <Icon name="logo" /> -->
+      <h2>AskExperts</h2>
+    </div>
+
+    <div>
+      <h3>Home</h3>
+      <h3>Pages</h3>
+      <h3>Service</h3>
+      <h3>Work</h3>
+    </div>
+
+    <div>
+      <!-- <Icon name="icon" /> -->
+      <p>+ (888) 452 1505</p>
+    </div>
+</article>
+
+<style>
+  *{
+    box-sizing: border-box; 
+  }
+
+    :root{
+
+        --background-color: #000;
+        --background-color2: #fff;
+        --menu-background-color: #515151;
+        --menu-backdrop-filter: blur(10.5px);
+
+
+        --content-color: #fff;
+
+        --content-text: 20px; 
+        --align-item: center;
+
+        --icon-gap: 1rem;
+        --icon-gap2: 0.5rem;
+
+    }
+
+    [data-icon="globe"] {    
+        width: 3.3rem;    
+        height: 3.3rem;  
+    }
+    
+    article{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--background-color);
+
+
+        & p{
+            color: var(--content-color);
+        }
+
+        & .Icons, .some{
+            display: flex;
+            align-items: var(--align-item);
+            gap: var(--icon-gap2);
+        }
+
+        & .some{
+          gap: var(--icon-gap);
+        }
+
+        & .menu{
+          background-color: var(--menu-background-color);
+          backdrop-filter: var(--menu-backdrop-filter);
+        }
+    }
+
+</style>
+

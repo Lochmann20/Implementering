@@ -1,0 +1,18 @@
+:root{
+    --content-width: 75rem;
+
+
+    --color-text: ;
+}
+
+article{
+    background: red;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.display-heading-2{
+    font-size: var(--step-1);
+}
