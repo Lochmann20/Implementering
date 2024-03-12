@@ -1,0 +1,60 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<article id="menu">
+    <div class="AskExperts">
+      <Icon name="logo" />
+      <h2>AskExperts</h2>
+    </div>
+
+    <div class="menu">
+      <h3>Home</h3>
+      <h3>Team</h3>
+      <h3>Case</h3>
+      <h3>Blog</h3>
+    </div>
+
+    <div class="search">
+      <Icon name="icon3" />
+      <p>+ (888) 452 1505</p>
+    </div>
+</article>
+
+<style>
+ #menu{
+  display: flex;
+  padding: 30px 360px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 105px;
+  color: var(--content-color-white);
+     
+  background-color: var(--menu-background-color);
+  backdrop-filter: var(--menu-backdrop-filter);
+ & h2{
+   font-size: var(--content-h2);
+ }
+ & .menu{
+   display: flex;
+   gap: var(--icon-gap3);
+ }
+ & .search, .AskExperts{
+   display: flex;
+   gap: var(--icon-gap2);
+   align-items: center;
+ }
+
+ & .search{
+  background-color: var(--background-color2);
+  border-radius: var(--search-border-radius);
+  padding: var(--search-padding);
+  color: var(--content-color-black);
+
+ }
+
+ 
+
+}
+</style>

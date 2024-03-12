@@ -1,0 +1,208 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<article class="brands">
+    <div class="studioGreen">
+    <!-- <Icon name="star-8" /> -->
+    <p>Studio Green</p>
+    </div>
+
+    <div class="Norto">
+    <p>Norto</p>
+    </div>
+
+    <div class="pointsOne">
+        <!-- <Icon name="star 8" /> -->
+        <!-- <Icon name="star 8" /> -->
+        <!-- <Icon name="star 8" /> -->
+        <!-- <Icon name="star 8" /> -->
+        <p>Points one</p>
+        <!-- <Icon name="star 8" /> -->
+        <!-- <Icon name="star 8" /> -->
+        <!-- <Icon name="star 8" /> -->
+    </div>
+
+    <div class="OutOfTheSandBox">
+        <p>OutOfThe Sand Box</p>
+    </div>
+
+    <div class="Brand">
+        <p>Brand</p>
+    </div>
+
+    <div class="Fortune">
+        <!-- <Icon name="star 8" /> -->
+        <p>Fortune</p>
+    </div>
+</article>
+
+<article id="aboutUsBox">
+    <section class="aboutUs">
+        <div>
+        <h1>About Us</h1>
+        <h2>About our Consuting Agency Team</h2>
+        <h3>We create experiences and build products that make business grow</h3>
+        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Service-Customer">
+            <div class="Service">
+                <!-- <Icon name="star 8" /> -->
+                <h2>400+</h2>
+                <p>Business Service</p>
+            </div>
+
+            <div class="Customer">
+                <!-- <Icon name="star 8" /> -->
+                <h2>100+</h2>
+                <p>Happy Customer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="image">
+        <img src="/public/images/photo2.png" alt="">
+        <p>50+</p>
+        <p>Market Experiences</p>
+    </section>
+</article>
+
+<style>
+   
+
+    #aboutUsBox{
+        display: flex;
+        width: 1200.025px;
+        align-items: flex-start;
+        gap: 65px;
+        margin: auto;
+        background-color: white;
+
+        & .aboutUs{
+            display: flex;
+            width: 420.204px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 55px;
+            flex-shrink: 0;
+
+            & h1{
+                border-radius: 20px;
+                background: #FFCC4A;
+                padding: 0px 12px;
+                align-items: center;
+                width: 18%;
+            }
+        }
+
+        & .Service-Customer{
+            display: flex;
+            gap: 100px;
+            justify-content: space-evenly;
+            align-items: center;
+            border-top: solid #D8D8D8;
+            border-bottom: solid #D8D8D8;
+            padding: 20px 0px;
+
+            & .Service, .Customer{
+                padding: 0px 20px 20px;
+                border-radius: 15px;
+                background: #F6F6F6;
+                width: 100%;
+                line-height: 1px;
+                align-items: center;
+            }
+        }
+
+        & .image{
+            
+
+            
+            img{
+                border-radius: 25px;
+                position: relative;
+            }
+        }
+    }
+
+    .brands{
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 132px;
+
+    }
+    .studioGreen{
+       color: #030211;
+       font-family: Syne;
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+       letter-spacing: 11.3px;
+       text-transform: uppercase; 
+       display: flex;
+       align-items: center;
+       
+    }
+
+    .Norto{
+       color: #030211;
+       font-family: Teko;
+       font-size: 62px;
+       font-style: normal;
+       font-weight: 300;
+       line-height: normal;
+       letter-spacing: -3.72px;
+       text-transform: uppercase;
+    }
+
+    .pointsOne{
+       color: #030211;
+       font-family: "Times New Roman";
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: normal;
+       letter-spacing: 11.3px;
+       text-transform: uppercase;
+    }
+
+    .OutOfTheSandBox{
+       color: #030211;
+       font-family: Thabit;
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: normal;
+       letter-spacing: 11.3px;
+       text-transform: uppercase;
+    }
+
+    .Brand{
+        color: #030211;
+        text-align: center;
+        font-family: "Tenor Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 22.6px;
+        text-transform: uppercase;
+    }
+
+    .Fortune{
+        color: black;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 10.735px;
+        text-transform: uppercase;
+    }
+</style>

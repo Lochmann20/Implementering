@@ -1,9 +1,49 @@
 :root{
+    
+
+    /* Background Color */
+    --background-color: #181818;  
+    --background-color2: #fff;
+    --menu-background-color: rgba(27, 27, 27, 0.91);
+
+
+    backdrop-filter: blur(10.5px);
+
+    /* Tekst color */
+    --content-color-white: #fff;
+    --content-color-black: #000;
+
+
+    /* Font size */
+    --content-text: 20px; 
+    --content-h2: 1.3rem;
+
+    /* Filter */
+    --menu-backdrop-filter: blur(10.5px);
+
+
+    /* Gap */
+    --icon-gap2: 0.5rem;
+    --icon-gap: 1rem;
+    --icon-gap3: 3rem;
+
+    /* padding */
+    --search-border-radius: 42px;
+    --search-padding: 0px 41px 0px 10px;
+
+
+    /* Width */
     --content-width: 75rem;
 
 
-    --color-text: ;
+    /* center */
+    --align-item: center;
+
+
+
+    
 }
+
 
 article{
     background: red;

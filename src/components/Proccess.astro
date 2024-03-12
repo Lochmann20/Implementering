@@ -1,0 +1,131 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+
+<div class="vector">
+</div>
+
+<article>
+    <div>
+    <h1>Proccess</h1>
+    <h2>Our client, global analytical techno company, wanted to build market.</h2>
+    </div>
+
+    <div>
+        <button>More Gallery</button>
+    </div>
+</article>
+
+<article class="images">
+    <div class="imagesBoxes">
+        <img src="/public/images/photo3.png" alt="">
+        <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4>
+    </div>
+
+    <div class="imagesBoxes">
+        <img src="/public/images/photo4.png" alt="">
+        <!-- <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4> -->
+    </div>
+
+    <div class="imagesBoxes">
+        <img src="/public/images/photo5.png" alt="">
+        <!-- <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4> -->
+    </div>
+
+    <div class="imagesBoxes">
+        <img src="/public/images/photo6.png" alt="">
+        <!-- <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4> -->
+    </div>
+
+    <div class="imagesBoxes">
+        <img src="/public/images/photo7.png" alt="">
+        <!-- <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4> -->
+    </div>
+
+    <div class="imagesBoxes">
+        <img src="/public/images/photo8.png" alt="">
+        <!-- <p>+</p>
+        <h3>Taxes & Efficiency</h3>
+        <h4>Business</h4> -->
+    </div>
+</article>
+
+<div class="plus">
+    <div>
+        <h1>1128+</h1>
+        <p>Succesful Work</p>
+    </div>
+    <div>
+        <h1>908+</h1>
+        <p>Team member</p>
+    </div>
+    <div>
+        <h1>258+</h1>
+        <p>Happy Customers</p>
+    </div>
+    <div>
+        <h1>564+</h1>
+        <p>Creative Idea</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<style>
+    *{
+        background-color: white;
+    }
+
+    article{
+        margin: auto;
+    }
+
+    .vector{
+        width: 1920.219px;
+        height: 645.79px;
+        flex-shrink: 0;
+        background: #181818;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        gap: 10px;
+        border-radius: 30px;
+        background: #FAFAFA;
+
+
+        & img{
+            border-radius: 15px;
+            position: relative;
+        }
+        
+    }
+
+
+    .plus{
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        text-align: center;
+    }
+</style>

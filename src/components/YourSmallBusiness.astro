@@ -1,0 +1,70 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+<img src="/public/images/photo.png" alt="">
+<article>
+    
+    <!-- <Icon name="" /> -->
+    <h2>Your small business growth advisors</h2>
+    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+    <button class="black">Our Service</button>
+    <button>Book a Meeting</button>
+</article>
+
+    
+
+<style>
+    article{
+        position: absolute;
+        top: 27rem;
+        left: 13rem;
+        border-radius: 29px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(5.5px);
+        width: 25%;
+        padding: 0px 20px 55px 55px;
+
+        & h2{
+            font-size: 50px;
+            font-family: Cabin;
+            line-height: 116%;
+            font-weight: 700;
+        }
+
+        & p{
+            font-size: 16px;
+            font-family: Lato;
+            color: #595566;
+            width: 431px;
+            height: 71px; 
+            line-height: 147.5%;
+            font-weight: 400;
+        }
+
+        & .black{
+            border-radius: 42px;
+            background: #181818;
+            color: white;
+            padding: 10px 20px;
+            align-items: flex-start;
+            font-size: 18px;
+        }
+
+        & button{
+            border-radius: 42px;
+            border: 1px solid #EBEBEB;
+            background: #FFF;
+            color: black;
+            padding: 10px 20px;
+            align-items: flex-start;
+            font-size: 18px;
+        }
+    }
+
+
+    img{
+        width: 100%;
+        position: relative;
+    }
+</style>

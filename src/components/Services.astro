@@ -1,0 +1,130 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<article>
+    <h1>Services</h1>
+    <h2>Get Control Over Your Business I take your finance to next level</h2>
+
+
+    <section>
+        <div class="Boxes">
+            <img src="/public/images/Audit.png" alt="">
+            <h3>Audit & Evaluation</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Boxes">
+            <img src="/public/images/Financial.png" alt="">
+            <h3>Financial Projections</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Boxes">
+            <img src="/public/images/Funds.png" alt="">
+            <h3>Funds and investments</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Boxes">
+            <img src="/public/images/Finance.png" alt="">
+            <h3>Finance & Restructuring</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Boxes">
+            <img src="/public/images/Taxes.png" alt="">
+            <h3>Taxes & Efficiency</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+        <div class="Boxes">
+            <img src="/public/images/Investment.png" alt="">
+            <h3>Investment banking</h3>
+            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        </div>
+
+    </section>
+
+</article>
+
+<style>
+    article{
+        background-color: #F5F5F5;
+        display: flex;
+        width: 1200.995px;
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+        margin: auto;
+        padding: 170px 359px;
+
+        & h1{
+            border-radius: 20px;
+            background: #4EAF4E;
+            padding: 0px 16px;
+            align-items: center;
+            
+            color: #FFF;
+            text-align: center;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 147.5%; /* 23.6px */
+            letter-spacing: 2.32px;
+            text-transform: uppercase;
+        }
+        
+        & h2{
+            text-align: center;
+            width: 781.869px;
+            margin-top: -1em;
+        }
+        
+        
+        & section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+
+            & .Boxes{
+                border-radius: 20px;
+                background: #EBEBEB; 
+                padding: 49px 47px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                flex-shrink: 0;
+                display: flex;
+
+                & h3{
+                    color: #181818;
+                    font-family: Cabin;
+                    font-size: 25px;
+                    line-height: 116%;
+                    margin-bottom: -0.5em;
+                }
+
+                & p{
+                    width: 293.003px;
+                    color: #595566;
+                    font-family: Lato;
+                    font-size: 16px;
+                    line-height: 147.5%;
+                }
+
+                & img{
+                    width: 64px;
+                    height: 60px
+
+                }
+            
+            }
+        }
+
+
+    }
+    
+</style>
