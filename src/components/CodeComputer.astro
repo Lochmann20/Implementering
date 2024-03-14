@@ -1,0 +1,90 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<div class="imgbox">
+<img src="/public/images/codeComputer.png" alt="">
+</div>
+
+
+<div class="blackbox">
+  <div class="content">
+    <div>
+        <h2>Case Name</h2>
+        <p>Taxes & Efficiency</p>
+    </div>
+    <div>
+        <h2>Category</h2>
+        <p>Business</p>
+    </div>
+    <div>
+        <h2>Date</h2>
+        <p>27th September 2022</p>
+    </div>
+  </div>
+
+  <div>
+      <button>Live Preview</button>
+  </div>
+</div>
+
+
+
+
+
+<style>
+
+    img{
+      border-radius: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+      width: 80%;
+    }
+
+    .blackbox{
+      border-radius: 30px;
+      background: #181818;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      padding: 30px 30px;
+      margin: auto;
+      margin-top: 1em;
+      position: relative;
+  
+      
+
+      & .content{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+      }
+
+      & h2{
+        font-size: 10px;
+      }
+
+      & p{
+        font-size: 5px;
+      }
+
+      button{
+        border-radius: 25px;
+        background: #FFCC4A;
+        padding: 8px 25px;
+        font-size: 10px;
+      }
+    }
+
+
+
+
+   
+</style>
+
+

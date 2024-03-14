@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+
+<article>
+    <div>
+        <h2>AskExperts  </h2>
+        <p>Fb. / Ig / Tw. / Be.</p>
+    </div>
+
+    <div>
+        <h3>Product</h3>
+        <li>Service</li>
+        <li>FAQ</li>
+        <li>Single Service</li>
+        <li>Get Quote</li>
+        <li>Prices</li>
+    </div>
+
+    <div>
+        <h3>Company</h3>
+        <li>About</li>
+        <li>News</li>
+        <li>Contacts</li>
+        <li>Testimonials</li>
+        <li>Our team</li>
+        <li>Our approach</li>
+    </div>
+
+    <div>
+        <h3>Adress</h3>
+        <p>1700 W Blancke St, kiyev 
+            port south USA, America
+            </p>
+        <button>Book an Appointment</button>
+    </div>
+</article>
+
+
+
+<style>
+    *{
+
+        & li, p, h2, h3, button{
+            color: white;
+        }
+
+        & h2{
+            font-size: 20px;
+        }
+
+        & h3{
+            font-size: 10px;
+        }
+    }
+
+    article{
+        display: grid;
+        align-items: center;
+        background: rgba(24, 24, 24, 0.90);
+        backdrop-filter: blur(21.5px);
+        margin-left: 1em;
+        padding: 10px 10px;
+    }
+
+    button{
+        background: rgba(24, 24, 24, 0.90);
+    }
+</style>

@@ -3,129 +3,110 @@ import { Icon } from "astro-icon/components";
 import "../Styles/global.css";
 ---
 
-
-<div class="vector">
+<div class="all">
+    <a href="#">All</a>
+    <p>Taxes & Efficiency</p>
+    <p>Investment banking</p>
+    <p>Financial Plan</p>
+    <p>Audit & Evaluation</p>
 </div>
+
 
 <article>
-    <div>
-    <h1>Proccess</h1>
-    <h2>Our client, global analytical techno company, wanted to build market.</h2>
-    </div>
-
-    <div>
-        <button>More Gallery</button>
-    </div>
-</article>
-
-<article class="images">
-    <div class="imagesBoxes">
+<section class="images">
         <img src="/public/images/photo3.png" alt="">
-        <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4>
-    </div>
 
-    <div class="imagesBoxes">
         <img src="/public/images/photo4.png" alt="">
-        <!-- <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4> -->
-    </div>
 
-    <div class="imagesBoxes">
         <img src="/public/images/photo5.png" alt="">
-        <!-- <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4> -->
-    </div>
+</section>
+<section class="images">
+    <img src="/public/images/photo6.png" alt="">
 
-    <div class="imagesBoxes">
-        <img src="/public/images/photo6.png" alt="">
-        <!-- <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4> -->
-    </div>
+    <img src="/public/images/photo7.png" alt="">
 
-    <div class="imagesBoxes">
-        <img src="/public/images/photo7.png" alt="">
-        <!-- <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4> -->
-    </div>
-
-    <div class="imagesBoxes">
-        <img src="/public/images/photo8.png" alt="">
-        <!-- <p>+</p>
-        <h3>Taxes & Efficiency</h3>
-        <h4>Business</h4> -->
-    </div>
+    <img src="/public/images/photo8.png" alt="">
+</section>
 </article>
-
-<div class="plus">
-    <div>
-        <h1>1128+</h1>
-        <p>Succesful Work</p>
-    </div>
-    <div>
-        <h1>908+</h1>
-        <p>Team member</p>
-    </div>
-    <div>
-        <h1>258+</h1>
-        <p>Happy Customers</p>
-    </div>
-    <div>
-        <h1>564+</h1>
-        <p>Creative Idea</p>
-    </div>
-</div>
-
-
-
-
-
-
 
 
 
 <style>
-    *{
-        background-color: white;
+article{
+    background-color: white;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    & p{
+        font-size: 10px;
+        color: white;
     }
 
-    article{
+    & a{
+        font-size: 10px;
+        color: #FFCC4A;
+    }
+}
+
+img{
+    width: 51%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 999px) {
+    .all{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        background-color: black;
+        width: fit-content;
+        padding: 15px 50px;
+        border-radius: 30px;
         margin: auto;
-    }
+        margin-top: 10em;
 
-    .vector{
-        width: 1920.219px;
-        height: 645.79px;
-        flex-shrink: 0;
-        background: #181818;
+        & p{
+            color: white;
+        }
+
+        & a{
+            color: #FFCC4A;
+        }
+    }
+    article{
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px 50px;
+        gap: 20px;
+        background-color: white;
     }
 
     .images{
         display: flex;
-        flex-direction: column;
-        padding: 25px;
-        gap: 10px;
-        border-radius: 30px;
-        background: #FAFAFA;
-
-
-        & img{
-            border-radius: 15px;
-            position: relative;
-        }
-        
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 25px;
     }
 
-
-    .plus{
-        display: flex;
-        justify-content: center;
-        gap: 70px;
-        text-align: center;
+    img{
+        border-radius: 15px;
     }
+
+}
+
+
 </style>

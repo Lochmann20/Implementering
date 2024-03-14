@@ -10,10 +10,10 @@ import "../Styles/global.css";
     </div>
 
     <div class="menu">
-      <h3>Home</h3>
-      <h3>Team</h3>
-      <h3>Case</h3>
-      <h3>Blog</h3>
+      <a href="index.html">Home</a>
+      <a href="team">Service</a>
+      <a href="case">Case</a>
+      <a href="study ">Study</a>
     </div>
 
     <div class="search">
@@ -23,15 +23,51 @@ import "../Styles/global.css";
 </article>
 
 <style>
+
+  #menu{
+    background-color: var(--menu-background-color);
+
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    & .AskExperts{
+      display: flex;
+      align-items: center;
+      margin: auto;
+    }
+    & h2{
+       font-size: var(--content-h2);
+    }
+
+    .menu a{
+      color: white;
+    }
+
+
+    .search{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      margin: auto
+    }
+  }
+
+  
+
+
+@media screen and (min-width: 999px){
+
  #menu{
   display: flex;
-  padding: 30px 360px;
+  padding: 30px 150px;
   align-items: center;
-  justify-content: space-around;
-  gap: 105px;
   color: var(--content-color-white);
-     
-  background-color: var(--menu-background-color);
+  height: 50px;
+  flex-direction: row;
+  gap: 5em;
+  
   backdrop-filter: var(--menu-backdrop-filter);
  & h2{
    font-size: var(--content-h2);
@@ -39,6 +75,11 @@ import "../Styles/global.css";
  & .menu{
    display: flex;
    gap: var(--icon-gap3);
+ }
+
+ & .menu a{
+  text-decoration: none;
+  color: white;
  }
  & .search, .AskExperts{
    display: flex;
@@ -49,12 +90,15 @@ import "../Styles/global.css";
  & .search{
   background-color: var(--background-color2);
   border-radius: var(--search-border-radius);
-  padding: var(--search-padding);
+  padding: 1px 20px;
   color: var(--content-color-black);
 
  }
 
  
 
+}
+
+  
 }
 </style>

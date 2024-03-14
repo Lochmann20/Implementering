@@ -1,0 +1,86 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<img src="/public/images/CaseStudies.png" alt="">
+<div>
+    <h1>Case Studies</h1>
+    <h2>Case Studies</h2>
+</div>
+
+<style>
+
+img{
+    position: relative;
+    width: 100%;
+}
+
+div{
+    position: absolute;
+    top: 11.3em;
+    left: 3em;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 8px;
+    background-color: #FFCC4A;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 15px;
+}
+
+h2{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 999px) {
+
+img{
+    position: relative;
+    width: 99.2%;
+}
+
+
+div{
+    position: absolute;
+    top: 20.5em; 
+    left: 22em;
+   
+
+    padding: 40px 40px;
+    flex-direction: column;
+    gap: 10px;
+    
+    border-radius: 29px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+
+    & h1{
+        font-family: Lato;
+        font-size: 16px;
+        border-radius: 20px;
+        background: #FFCC4A;
+        padding: 0px 15px; 
+        display: inline-flex;
+        align-items: flex-start;    
+        text-transform: uppercase;
+    }
+
+    & h2{
+        font-family: Cabin;
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+    
+}
+</style>

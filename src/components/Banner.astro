@@ -29,6 +29,28 @@ import "../Styles/global.css";
     box-sizing: border-box; 
   }
 
+  article{
+    background-color: var(--background-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Icons{
+    align-items: center;
+    display: flex;
+  }
+
+  p{
+    font-size: x-small;
+  }
+
+  .some {
+    display: none;
+  }
+
+
+  @media screen and (min-width: 999px) {
 
     [data-icon="globe"] {    
         width: 3.3rem;    
@@ -55,5 +77,8 @@ import "../Styles/global.css";
           gap: var(--icon-gap);
         }
     }
+
+
+  }
 </style>
 

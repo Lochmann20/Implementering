@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<div class="SubscribeOurNewsletter">
+    <div>
+      <h2>Subscribe Our Newsletter</h2>
+      <p>Build stronger Customer Relationships with Consultalk</p>
+    </div>
+  
+    <div class="inputButton">
+      <input type="text" placeholder="your mail adress">
+      <button>Subscribe</button>
+    </div>
+</div>
+
+<style>
+
+.SubscribeOurNewsletter{
+      display: grid;
+      background-color: #181818;
+      width: 60%;
+      margin: auto;
+      border-radius: 15px;
+      padding: 20px;
+
+
+      & h2{
+        color: white;
+        font-size: 20px;
+      }
+
+      & p{
+        color: white;
+        font-size: 10px;
+      } 
+
+      & input{
+        border-radius: 54px;
+        border: 1px solid #E3E3E3;
+        background: #FFF;
+        padding: 5px 20px;
+        width: 45%;
+      }
+
+      & button{
+        border-radius: 42px;
+        background: #FFCC4A;
+        padding: 5px 10px;
+      }
+}
+</style>

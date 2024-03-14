@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import "../Styles/global.css";
+---
+
+<img src="/public/images/caseStudySingle.png" alt="">
+<div>
+    <h1>Case Studies single</h1>
+    <h2>Taxes & Efficiency</h2>
+</div>
+
+<style>
+    img{
+        position: relative;
+        width: 100%;
+    }
+
+
+div{
+    position: absolute;
+    top: 11em; 
+    left: 2em;
+   
+
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+
+    & h1{
+        font-family: Lato;
+        font-size: 10px;
+        border-radius: 20px;
+        background: #FFCC4A;
+        padding: 0px 10px; 
+        display: inline-flex;
+        align-items: flex-start;    
+    }
+
+    & h2{
+        font-family: Cabin;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+</style>
